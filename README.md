@@ -10,10 +10,12 @@ I have created a specific test for OpenTable expectations test. See Class OpenTa
 ### RobotsWars.Game
 A console application that uses the RobotWars.Core project. 
 
-## TODO
+## TODO / Extend
 * Add user input validation in the console application.
 * Add error handling. At the momment the core applicatiAdd error handling. At the moment the core application raises exceptions when needed, but those exceptions are not handled in the console application.on raise exceptions when needed but those exceptions are not handle on the console application.
 * At the momment the input of the robots is done in a sequential way, it will be nice to allow multiple robots to move and change directions at the same time.
+* What if we have Different Grids shapes ?
+* What if we have Super robots that can Jump two positions ?
 
 ## Game Description
 A fleet of hand-built robots are due to engage in battle for the annual “Robot Wars” competition. Each

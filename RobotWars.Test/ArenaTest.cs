@@ -8,7 +8,7 @@ namespace RobotWars.Core.Test
         public void AddPlayerSuccess()
         {
             // Arrange
-            var arena = new Arena(new Grid(new Location(10, 5)));
+            var arena = new Arena(new RectangularGrid(new Location(10, 5)));
 
             // Act
             arena.AddRobot(new Robot(new Location(2, 2), Direction.S));
@@ -21,7 +21,7 @@ namespace RobotWars.Core.Test
         public void AddPlayerFail()
         {
             // Arrange
-            var arena = new Arena(new Grid(new Location(10, 5)));
+            var arena = new Arena(new RectangularGrid(new Location(10, 5)));
             
             // Assert
             Assert.Throws<OutOfArenaException>(

@@ -5,17 +5,17 @@ namespace RobotWars.Core
 {
     public class Arena
     {
-        public IList<Robot> Robots { get; private set; }
+        public IList<Player> Robots { get; private set; }
 
-        public  Grid _grid;
+        public IGrid _grid;
         
-        public Arena(Grid grid)
+        public Arena(IGrid grid)
         {
             _grid = grid;
-            Robots = new List<Robot>();
+            Robots = new List<Player>();
         }
         
-        public void AddRobot(Robot robot)
+        public void AddRobot(Player robot)
         {
             CheckLocation(robot.Location);
 

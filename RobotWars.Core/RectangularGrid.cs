@@ -1,12 +1,12 @@
 ﻿namespace RobotWars.Core
 {
-    public class Grid
+    public class RectangularGrid : IGrid
     {        
-        public Location bottomLeft { get; private set; }
+        private Location bottomLeft { get; set; }
         
-        public Location TopRight { get; private set; }        
+        private Location TopRight { get; set; }        
 
-        public Grid(Location topRight)
+        public RectangularGrid(Location topRight)
         {
             this.bottomLeft = new Location(0, 0);
             this.TopRight = topRight;            

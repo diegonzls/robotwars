@@ -13,7 +13,7 @@ namespace RobotsWarsGame
             
             var arenaTR = Console.ReadLine().Split(' ');
 
-            var arena = new Arena(new Grid(new Location(Convert.ToInt32(arenaTR[0]), Convert.ToInt32(arenaTR[1]))));
+            var arena = new Arena(new RectangularGrid(new Location(Convert.ToInt32(arenaTR[0]), Convert.ToInt32(arenaTR[1]))));
 
             for (int i = 0; i < _numberOfPlayer; i++)
             {

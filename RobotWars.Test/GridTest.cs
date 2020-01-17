@@ -16,7 +16,7 @@ namespace RobotWars.Core.Test
         public void IsValidCoordinateTrue(int x, int y)
         {
             // Arrange
-            var grid = new Grid(new Location(8, 5));
+            var grid = new RectangularGrid(new Location(8, 5));
 
             // Act
             var result = grid.IsValidLocation(new Location(x, y));
@@ -32,7 +32,7 @@ namespace RobotWars.Core.Test
         public void IsValidCoordinateFalse(int x, int y)
         {
             // Arrange
-            var grid = new Grid(new Location(10, 8));
+            var grid = new RectangularGrid(new Location(10, 8));
 
             // Act
             var result = grid.IsValidLocation(new Location(x, y));

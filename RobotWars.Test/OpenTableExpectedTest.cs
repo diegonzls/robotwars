@@ -18,7 +18,7 @@ namespace RobotWars.Core.Test
         public void Robot1()
         {
             // Arrange
-            var arena = new Arena(new Grid(new Location(5, 5)));
+            var arena = new Arena(new RectangularGrid(new Location(5, 5)));
             arena.AddRobot(new Robot(new Location(1, 2), Direction.N));
 
             // Act
@@ -49,7 +49,7 @@ namespace RobotWars.Core.Test
         public void Robot2()
         {
             // Arrange
-            var arena = new Arena(new Grid(new Location(5, 5)));
+            var arena = new Arena(new RectangularGrid(new Location(5, 5)));
             arena.AddRobot(new Robot(new Location(3, 3), Direction.E));
 
             // Act
