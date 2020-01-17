@@ -7,7 +7,7 @@ namespace RobotWars.Core
     {
         public IList<Player> Robots { get; private set; }
 
-        public IGrid _grid;
+        private readonly IGrid _grid;
         
         public Arena(IGrid grid)
         {

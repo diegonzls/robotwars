@@ -6,7 +6,7 @@
 
         public Direction Direction { get; protected set; }
 
-        public Player(Location location, Direction direction)
+        protected Player(Location location, Direction direction)
         {
             Location = location;
             Direction = direction;
